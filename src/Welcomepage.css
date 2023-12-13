@@ -1,6 +1,9 @@
+html{
+    height: 100%; /* without this it creates two halfs of the linear gradient */
+    background: linear-gradient(to bottom, #FBAB7E,#F7CE68)
+}
 #root{
     /*not good practice*/
-
     display: flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +15,14 @@
     background-color: aliceblue;
     border-radius: 20px;
     width: 50%;
+    padding: 20px;
+    background: linear-gradient(to bottom, #FBAB7E,#F7CE68);
+    box-shadow: 5px 6px 109px 5px rgba(0,0,0,0.85);
+   
+    border: none;
+  
+
+    
 }
 .intro-title{
     display: flex;
@@ -24,14 +35,27 @@
     display: flex;
     justify-content: center;
   column-gap: 20px;
+ 
 }
 button{
-   
-    border-radius: 9px;
+    color: aliceblue;
+    background-color: rebeccapurple;
+    width: 30%;
+    height: 40px;
+    border-radius: 27px;
     border-style: none;
     cursor: pointer;
+    
 }
 button:hover{
     background-color: red;
     transition: background-color 0.3s ease-in-out;
+}
+.login{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+
+}
+#submit{
+    background-color: #FBAB7E;
 }

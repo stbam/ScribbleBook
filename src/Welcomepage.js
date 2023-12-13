@@ -18,13 +18,16 @@ function Welcomepage() {
         {action==="Returning User"? <Loginscreen/>:<></> /* inserts a loginscreen component */}
         {action==="New User"?<Signup/>:null}
         
-       
+        {action!=="Returning User" && action !== "New User"&&( 
         <div className='user-buttons'>
             <button onClick={()=>{setAction("New User")}}>New User</button>
             <button onClick={()=>{setAction("Returning User")}}>Returning User</button>
             
         </div>
+        )}
+        
       </div>
+      
     );
   }
 
